@@ -2,6 +2,6 @@
 
 export default function Demo2() {
   return (
-    <h6>Demo2</h6>
+    <h6>Demo 1234</h6>
   )
 }
