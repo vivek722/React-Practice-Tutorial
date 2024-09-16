@@ -1,19 +1,20 @@
 //import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-import Data from './Demo/Demo'
-import Data2 from './Demo/Demo2'
+import data  from './APi/Jsondata.json'
+import NatflixCard from './Component/natflixCard'
 
 function App() {
-  //const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <h1>
-        <Data/> 
-        </h1>
-      </div>
+    <ul>
+      {data.map((currentelement)=>{
+        return(
+           <NatflixCard  key={currentelement.id} currentelement={currentelement}/>
+        )
+      })}
+   
+    </ul>
     </>
   )
 }
