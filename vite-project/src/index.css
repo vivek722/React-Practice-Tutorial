@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,4 +65,51 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+ .container{
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 1.4rem 2.4rem ;
+ }
+.grid{
+  display: grid;
+  gap: 16rem;
+}
+.grid-two-cols{
+  grid-template-columns: repeat(2,1fr);
+}
+
+.grid-three-cols{
+  grid-template-columns: repeat(3,1fr);
+}
+.card{
+box-shadow: rgba(0, 0, 0, 0.5)0px 6px 24px 0px,
+rgba(0, 0, 0, 0.8)0px 0px 0px 1px;
+}
+.card-content{
+  padding:  1.2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.Watch_Now{
+  padding: 1.2rem 2.4rem;
+  border: none;
+  font-size: 1.6rem;
+  color: azure;
+  background-color: lightskyblue;
+  font-weight: bold;
+  cursor: pointer;
+}
+.super_hit{
+  background-color: aqua;
+}
+.avrage{
+  background-color: lightgreen;
+}
+.rate{
+  padding: 0.3rem 1.8rem;
+  color: #000;
+  margin-left: 1.2rem;
+  border-radius: 100rem;
 }
