@@ -1,15 +1,20 @@
- const natflixCard =({props} )=>{
+ const natflixCard =(props )=>{
     
     const {id,img_url,name,rating,description,genre,cast,watch_url} =  props.currentelement;
+    const ratingClass = props.currentelement.rating >= 8.5 ?"super_hit" :"avrage"
     return(
-        <li key={props.currentelement.id}>
-           <img src={props.currentelement.img_url} width="40%" height="40%"></img>
-           <h1>{props.currentelement.name}</h1>
-           <h2>{props.currentelement.rating}</h2>
-           <h3>{props.currentelement.description}</h3>
-           <h1>{props.currentelement.genre}</h1>
-           <h2>{props.currentelement.cast}</h2>
-           <a href={props.currentelement.watch_url}>{props.currentelement.watch_url}</a>
-         </li>);
+        <div key={props.currentelement.id} className="card">
+           <div><img src={props.currentelement.img_url} width="100%" height="70%"></img></div>
+           <div className="card-content">
+           <h2>Name :- {props.currentelement.name}</h2>
+           <h3>Ratting :- <span className={`rate ${ratingClass}`} >{props.currentelement.rating}</span></h3>
+           <h4>Description :-{props. currentelement.description}</h4>
+           <h3>Genre :- {props.currentelement.genre}</h3>
+           <h4>Cast :- {props.currentelement.cast}</h4>
+           <button className={`Watch_Now ${ratingClass}`}><a href={props.currentelement.watch_url}>Watch now</a></button>
+           </div>
+         </div>
+         );
+         
 }
 export default natflixCard
