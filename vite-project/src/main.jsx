@@ -1,6 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
+import { EventHandLing } from './Component/EventHandling.jsx'
 import './index.css'
 
 createRoot(document.getElementById('root')).render(
@@ -9,5 +10,6 @@ createRoot(document.getElementById('root')).render(
         <h1 className='natflix-heading'>best Netflix Series</h1>
    <App />
    </section>
+   <EventHandLing/>
   </StrictMode>,
 )
