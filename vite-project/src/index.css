@@ -113,3 +113,18 @@ rgba(0, 0, 0, 0.8)0px 0px 0px 1px;
   margin-left: 1.2rem;
   border-radius: 100rem;
 }
+.Div1{
+  background-color: aqua;
+  height: 40rem;
+  width: 40rem;
+}
+.Div2{
+  background-color: bisque;
+  height: 40rem;
+  width: 40rem;
+}
+.Div3{
+  background-color: brown;
+  height: 40rem;
+  width: 40rem;
+}
